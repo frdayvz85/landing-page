@@ -9,13 +9,431 @@
 
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/main.js" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&family=Roboto:wght@100;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- Loading start -->
+    <section class="loading">
+        <div class="loader">
+            <div class="upper-ball ball"></div>
+            <div class="right-ball ball"></div>
+            <div class="lower-ball ball"></div>
+            <div class="left-ball ball"></div>
+        </div>
+    </section>
+    <!-- Loading end -->
+    <header id="header">
+        <nav class="navbar">
+            <ul class="navbar__links">
+                <li><a href="#" class="active">Shop</a></li>
+                <li><a href="#">Our process</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <a href="/"><img src="./img/logo.png" alt="Logo" class="navbar__logo"></a>
+            <ul class="navbar__links">
+                <div class="navbar__icons">
+                    <a href="#"><i class="fa-regular fa-face-smile" title="Smile"></i></a>
+                    <a href="#"> <i class="fa-solid fa-bag-shopping" title="Bag"></i></a>
+                </div>
+            </ul>
+            <div class="navbar__hamburger">
+                <span class="bar top-bar"></span>
+                <span class="bar middle-bar"></span>
+                <span class="bar bottom-bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Banner start -->
+        <section id="banner">
+            <img src="./img/banner1.png" alt="banner1" class="banner__left">
+            <img src="./img/banner2.png" alt="banner2" class="banner__right">
+        </section>
+        <!-- Banner end -->
 
-    <header></header>
-    <main></main>
-    <footer></footer>
+        <!-- Info start -->
+        <section id="info" class="container">
+            <div class="info__left">
+                <div class="info__text">
+                    A modern generation of sofa.
+                    Lorem ipsum dolor sit amet.
+                </div>
+                <button class="info__btn btn--org">
+                    saber más
+                </button>
+            </div>
+
+            <div class="info__right">
+                <div class="info__card scroll-animate left">
+                    <img src="./img/card1.png" alt="card1" class="info__img">
+                    <img src="./img/card1-star.png" alt="card1-star" class="info__img--star1">
+                    <h2 class="info__card__header">
+                        Entrega en 24 h en tu casa
+                    </h2>
+                    <div class="info__card__body">
+                        El sofá en caja que cabe en tu ascensor.
+                    </div>
+                </div>
+                <div class="info__card scroll-animate animate left">
+                    <img src="./img/card2.png" alt="card2" class="info__img">
+                    <img src="./img/card2-star.png" alt="card2-star" class="info__img--star2">
+                    <h2 class="info__card__header">
+                        Pruébalo 100 días
+                    </h2>
+                    <div class="info__card__body">
+                        Vamos a tu casa a recogerlo. lorem10
+                    </div>
+                </div>
+                <div class="info__card scroll-animate animate left">
+                    <img src="./img/card3.png" alt="card3" class="info__img">
+                    <img src="./img/card3-star.png" alt="card3-star" class="info__img--star3">
+                    <h2 class="info__card__header">
+                        Fácil de montar
+                    </h2>
+                    <div class="info__card__body">
+                        No tools needed !
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Info end -->
+
+        <!-- Modulus start -->
+        <section id="modulus" class="container">
+            <h2 class="modulus__header scroll-animate animate right">3 módulos. Infinitas posibilidades.</h2>
+            <div class="moldulus__body scroll-animate animation left">
+                <img src="./img/modulus-star.png" alt="modulus-star" class="moldulus__star">
+                <img src="./img/modulus.png" alt="modulus" class="modulus__img">
+                <div class="modulus__rate">
+                    <div class="rate__top">
+                        <div class="rate__grade"><b>Excellent</b></div>
+                        <div class="rate__stars">
+                            <div class="rate__stars-wrapper">
+                                <img class="star" src="./img/star.png" alt="star">
+                            </div>
+                            <div class="rate__stars-wrapper">
+                                <img class="star" src="./img/star.png" alt="star">
+                            </div>
+                            <div class="rate__stars-wrapper">
+                                <img class="star" src="./img/star.png" alt="star">
+                            </div>
+                            <div class="rate__stars-wrapper">
+                                <img class="star" src="./img/star.png" alt="star">
+                            </div>
+                            <div class="rate__stars-wrapper">
+                                <img class="star" src="./img/star.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="rate__point">
+                            <b>4.9</b> out of 5
+                        </div>
+                    </div>
+                    <div class="rate__bottom">
+                        <b>123</b> reviews on
+                        <span class="rate__bottom__container">
+                            <img class="star" src="./img/green-star.png" alt="star">
+                            <b>Trustpilot</b>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modulus end -->
+
+        <!-- Beds start -->
+        <section id="beds" class="container">
+            <h2 class="beds__header  scroll-animate animate right">Construye tu sofá perfecto. Modifícalo como
+                quieras. Empieza con...</h2>
+            <div class="beds__actions scroll-animate animate bottom">
+                <div class="beds__colors--wrapper">
+                    <span class="beds__color-title">Elige tu color</span>
+                    <div class="beds__colors">
+                        <div class="beds__color tab-1 active" onclick="color(event, 'green')">
+                            <span class="tooltip-text">Green forest</span>
+                        </div>
+                        <div class="beds__color tab-2" onclick="color(event, 'dark')">
+                            <span class="tooltip-text">Dark forest</span>
+                        </div>
+                        <div class="beds__color tab-3" onclick="color(event, 'grey')">
+                            <span class="tooltip-text">Grey forest</span>
+                        </div>
+                        <div class="beds__color tab-4" onclick="color(event, 'gray')">
+                            <span class="tooltip-text">Gray forest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="beds__btn btn--org">Compra ahora</button>
+            </div>
+            <div class="beds">
+                <div id="green" class="beds__types">
+                    <div class="beds__left scroll-animate animate left">
+                        <div class="beds__wrap">
+                            <div class="bed">
+                                <img src="./img/bed1.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">3 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                            <div class="bed">
+                                <img src="./img/bed2.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">Single chair</div>
+                                    <div class="bed__price">Desde 1500€</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="beds__wrap">
+                            <div class="bed">
+                                <img src="./img/bed3.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">2 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                            <div class="bed">
+                                <img src="./img/bed4.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">3 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="beds__right scroll-animate animate right">
+                        <div class="bed">
+                            <img src="./img/bed5.png" alt="bed">
+                            <div class="bed__detail">
+                                <div class="bed__type">3 Seater sofa</div>
+                                <div class="bed__price">Desde 2500€</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="dark" class="beds__types">
+                    <div class="beds__left scroll-animate animate left">
+                        <div class="beds__wrap">
+                            <div class="bed">
+                                <img src="./img/bed1.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">3 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                            <div class="bed">
+                                <img src="./img/bed2.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">Single chair</div>
+                                    <div class="bed__price">Desde 1500€</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="beds__wrap">
+                            <div class="bed">
+                                <img src="./img/bed3.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">2 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                            <div class="bed">
+                                <img src="./img/bed4.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">3 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="beds__right scroll-animate animate right">
+                        <div class="bed">
+                            <img src="./img/bed5.png" alt="bed">
+                            <div class="bed__detail">
+                                <div class="bed__type">3 Seater sofa</div>
+                                <div class="bed__price">Desde 2500€</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="grey" class="beds__types">
+                    <div class="beds__left scroll-animate animate left">
+                        <div class="beds__wrap">
+                            <div class="bed">
+                                <img src="./img/bed1.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">3 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                            <div class="bed">
+                                <img src="./img/bed2.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">Single chair</div>
+                                    <div class="bed__price">Desde 1500€</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="beds__wrap">
+                            <div class="bed">
+                                <img src="./img/bed3.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">2 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                            <div class="bed">
+                                <img src="./img/bed4.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">3 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="beds__right scroll-animate animate right">
+                        <div class="bed">
+                            <img src="./img/bed5.png" alt="bed">
+                            <div class="bed__detail">
+                                <div class="bed__type">3 Seater sofa</div>
+                                <div class="bed__price">Desde 2500€</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gray" class="beds__types">
+                    <div class="beds__left scroll-animate animate left">
+                        <div class="beds__wrap">
+                            <div class="bed">
+                                <img src="./img/bed1.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">3 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                            <div class="bed">
+                                <img src="./img/bed2.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">Single chair</div>
+                                    <div class="bed__price">Desde 1500€</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="beds__wrap">
+                            <div class="bed">
+                                <img src="./img/bed3.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">2 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                            <div class="bed">
+                                <img src="./img/bed4.png" alt="bed">
+                                <div class="bed__detail">
+                                    <div class="bed__type">3 Seater sofa</div>
+                                    <div class="bed__price">Desde 2500€</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="beds__right scroll-animate animate right">
+                        <div class="bed">
+                            <img src="./img/bed5.png" alt="bed">
+                            <div class="bed__detail">
+                                <div class="bed__type">3 Seater sofa</div>
+                                <div class="bed__price">Desde 2500€</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Beds end -->
+
+        <!-- Image start -->
+        <section id="image">
+            <img src="./img/girl.png" alt="Girl">
+            <div class="image__text scroll-animate animate left">
+                Modular. Dynamic. Comfy. Modular. Dynamic. Comfy.
+            </div>
+        </section>
+        <!-- Image end -->
+
+
+        <!-- Partners start -->
+        <section id="partners" class="container">
+            <h1 class="partner__title">Hablan de nosotros</h1>
+            <div class="partners__wrapper">
+                <a href="#">
+                    <img src="./img/partner1.png" alt="New york times" class="scroll-animate animate top">
+                </a>
+                <a href="#">
+                    <img src="./img/partner2.png" alt="Insider" class="scroll-animate animate top">
+                </a>
+                <a href="#">
+                    <img src="./img/partner3.png" alt="Leusire" class="scroll-animate animate top">
+                </a>
+                <a href="#">
+                    <img src="./img/partner4.png" alt="Vogue" class="scroll-animate animate top">
+                </a>
+                <a href="#">
+                    <img src="./img/partner5.png" alt="Elle" class="scroll-animate animate top">
+                </a>
+            </div>
+        </section>
+        <!-- Patrners end -->
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__left">
+                    <div class="footer__newsletter">
+                        <div class="footer__title">
+                            Join our mailing list
+                        </div>
+                        <div class="footer__form">
+                            <input id="email" class="footer__newsletter-input" placeholder="Enter Your Email" />
+                            <button onClick="subscribeToNews();" class="footer__btn btn--org">subscribe</button>
+                        </div>
+                        <div class="footer__subtitle">
+                            By subscribing, i accept the terms & conditions.
+                        </div>
+                    </div>
+                    <ul class="footer__links">
+                        <span>Useful links</span>
+                        <li class="footer__link"><a href="#"> FAQs</a></li>
+                        <li class="footer__link"><a href="#"> Refer to a friend</a></li>
+                        <li class="footer__link"><a href="#"> Contact us</a></li>
+                        <li class="footer__link"><a href="#"> Work with us</a></li>
+                    </ul>
+                </div>
+                <ul class="footer__socials">
+                    <li> <a href="#"> <i class="fa-brands fa-instagram"></i></a></li>
+                    <li> <a href="#"> <i class="fa-brands fa-facebook"></i></a></li>
+                    <li> <a href="#"> <i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <img src="./img/logo-big.png" alt="Logo" class="logo__big scroll-animate animate left">
+            <div class="copyright">
+                <a href="#" class="copyright__start">Copyright @Nubba 2022</a>
+                <div class="copyright__end">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
